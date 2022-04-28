@@ -7,6 +7,7 @@ This code has many deficiencies and specifications, and will be gradually revise
 ## Getting started
 ### Requirements
 Please configure **ROS** and **python**
+
 ```shell
 mkdir -p ~/catkin_ws/src
 cd src
@@ -17,7 +18,11 @@ catkin_make
 ```
 ### running
 Before using this code, please manually calibrate the position of the antenna and the initial position of the tag
-In files: ```src/rfid_reader/script/Levenberg_Marquarelt_algorithm.py``` ```src/rfid_reader/ltkcpp/include/RFIDHandler.h```
+
+In files: 
+```src/rfid_reader/script/Levenberg_Marquarelt_algorithm.py``` 
+```src/rfid_reader/ltkcpp/include/RFIDHandler.h```
+
 ```shell
 roscore
 rosrun rfid_reader rfid_publisher
